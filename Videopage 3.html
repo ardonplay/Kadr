@@ -1,0 +1,62 @@
+
+<html>
+   
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <title>МВидео - Нам всё равно!</title>
+    </head>
+    
+    <body>
+      
+        <header class="header">
+            <a href="index.html">
+              <img src="Pictures/MVideo Logo.png" alt="Mvideo-logo" class="Mvideo-logo" />
+            </a>
+            <form class="search-bar">
+              <input class="search-input" type="Поиск" placeholder="Поиск" aria-label="Поиск" />
+              <button type="submit" class="search-btn">
+                <img src="Pictures/magnify.svg" />
+              </button>
+            </form>
+            <div class="menu-icons">
+              <a href="#">
+                <img src="Pictures/video-plus.svg" alt="Upload Video" />
+              </a>
+              <a href="#">
+                <img src="Pictures/apps.svg" alt="Apps" />
+              </a>
+              <a href="#">
+                <img src="Pictures/bell.svg" alt="Notifications" />
+              </a>
+              
+            </div>
+          </header>
+        <div id="Player" style="position:absolute; left:25px; top:15%; width: %; height:100%; z-index:1">
+          <video width="75%" height="75%"   autoplay>
+            <source src="meme.mp4" type=video/mp4>
+            </video>
+        </div>
+        <div id="video-bottom-section"  style="position:absolute; left:2%; top:100%; width: 75%; height:75%; z-index:1">
+            <a href="#">
+              <img id="channel-icon" src="Pictures/dr DIY.jpg" width="5%" />
+            </a>
+            <div id="video-details" style="position:absolute; left:2%; top:-10%; width: 75%; height:75%; z-index:2">
+             БЕСПЛАТНОЕ ЭЛЕКТРИЧЕСТВО!
+             <div id="chennel name" style="position:absolute; left:7%; top:18%; width: 75%; height:75%; z-index:1"> <a href="#" id="video-channel-name">Доктор Дью</a> </div>
+              <div id="video-metadata">
+                <span>1,6 млн просмотров</span>
+                •
+                <span>1 месяц назад</span>
+              </div>
+            </div>
+    
+</div>
+    </body>
+    
+    
+    </html>
+    

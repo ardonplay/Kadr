@@ -114,6 +114,7 @@ body {
   background-color: #F9F9F9;
 }
 
+
 .categories {
   padding: 1rem 2rem;
   border-top: 1px solid #999;
@@ -139,7 +140,7 @@ body {
 }
 
 .category:hover {
-  background-color: #DDD;
+  background-color: rgb(8, 8, 8);
 }
 
 .category.active {
@@ -164,23 +165,27 @@ body {
 }
 
 .MLive-logo {
-  position: left;
+  position: right;
   height: 70px;
+  right: 25px;
 }
 
 
 .Vk {
 position:right;
 height: 30px;
+padding: .1em .3em;
 }
 .insta{
   position:right;
 height: 30px;
+padding: .1em .3em;
 }
 
 .telegram{
   position:right;
   height: 30px;
+  padding: .1em .3em;
 }
 
 .menu-icons {

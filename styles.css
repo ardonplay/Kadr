@@ -169,7 +169,19 @@ body {
 }
 
 
+.Vk {
+position:right;
+height: 40px;
+}
+.insta{
+  position:right;
+height: 40px;
+}
 
+.telegram{
+  position:right;
+  height: 40px;
+}
 
 .menu-icons {
   display: grid;

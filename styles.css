@@ -171,27 +171,28 @@ body {
 }
 
 
-.Vk {
+.vk {
 position:right;
-height: 30px;
-padding: .1em .3em;
+height: 40px;
+
 }
-.insta{
+.insta {
   position:right;
-height: 30px;
-padding: .1em .3em;
+height: 40px;
+
 }
 
-.telegram{
+.tg { 
   position:right;
-  height: 30px;
-  padding: .1em .3em;
+  height: 40px;
+ 
 }
 
 .menu-icons {
   display: grid;
-  grid-template-columns: repeat(4, auto);
-  align-items: center;
+ 
+  grid-template-columns: repeat(3, auto);
+  align-items: end;
   gap: 1.5rem;
 }
 

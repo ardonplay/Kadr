@@ -180,6 +180,7 @@ Margin-right: 10px;
     6px 6px blue,
     7px 7px purple;
   -webkit-transform: translateX(-7px);
+  -moz-transform: translateX(-7px); 
   transform: translateX(-7px);
   -webkit-transition: all 0.3s ease;;
   -moz-transition: all 0.3s ease;;

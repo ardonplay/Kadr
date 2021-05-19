@@ -170,7 +170,22 @@ body {
   right: 25px;
 Margin-right: 10px;
 }
-
+ a:hover{
+  box-shadow:
+    1px 1px red,
+    2px 2px orange,
+    3px 3px yellow,
+    4px 4px green,
+    5px 5px lightblue,
+    6px 6px blue,
+    7px 7px purple;
+  -webkit-transform: translateX(-7px);
+  transform: translateX(-7px);
+  -webkit-transition: all 0.3s ease;;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
+}
 
 .vk {
 position:right;

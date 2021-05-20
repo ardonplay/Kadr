@@ -258,21 +258,22 @@ height: 40px;
 .menu-icons {
   display: grid;
  
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(5, auto);
   align-items: end;
-  gap: 1.5rem;
+  gap: 2rem;
   
 }
 .mode{
-  height: 30px;
- -webkit-transition: all 0.4s ease-out;
+  gap: 1.5rem;
+  height: 40px;
+  -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
   -o-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 .mode:hover{
   background: lightgreen;
-  border-radius: 70%;
+  border-radius: 30%;
 }
 .menu-channel-icon {
   border-radius: 50%;

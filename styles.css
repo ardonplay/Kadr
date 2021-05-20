@@ -81,6 +81,13 @@ body {
   text-decoration: none;
   color: black;
 }
+.video-title-black {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: .5rem;
+  text-decoration: none;
+  color: white;
+}
 
 .video-channel-name {
   margin-bottom: .1rem;
@@ -95,6 +102,12 @@ body {
 .video-channel-name,
 .video-metadata {
   color: #555;
+}
+.video-metadata-black, .vivideo-channel-name-black {
+  color: rgb(189, 189, 189);
+}
+.vivideo-channel-name-black:hover {
+  color: rgb(255, 247, 247);
 }
 
 .video-section-title {
@@ -118,12 +131,14 @@ body {
 .videos {
   background-color: #F9F9F9;
 }
-
+.videos-black{
+  background-color: #111;
+}
 
 .categories {
   padding: 1rem 2rem;
   border-top: 1px solid #999;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #11111;
 }
 
 .category-section {
@@ -232,7 +247,7 @@ height: 40px;
 }
 
 .tg { 
-  position:right;
+  position:left;
   height: 40px;
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
@@ -248,10 +263,23 @@ height: 40px;
   gap: 1.5rem;
   
 }
-
+.mode{
+  height: 30px;
+ -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+.mode:hover{
+  background: lightgreen;
+  border-radius: 70%;
+}
 .menu-channel-icon {
   border-radius: 50%;
   width: 36px;
   height: 36px;
   background-color: #AAA;
 }
+a { 
+  text-decoration: none; 
+ } 

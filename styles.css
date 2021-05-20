@@ -28,6 +28,10 @@ body {
 .thumbnail {
   position: relative;
   display: flex;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .thumbnail::before {
@@ -48,6 +52,7 @@ body {
   min-width: 250px;
   min-height: 150px;
   background-color: #AAA;
+ 
 }
 
 .video-bottom-section {
@@ -162,6 +167,10 @@ body {
 
 .Mvideo-logo {
   height: 70px;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .MLive-logo {
@@ -169,23 +178,37 @@ body {
   height: 70px;
   right: 25px;
 Margin-right: 10px;
+-webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
- a:hover{
+ .turn:hover{
   box-shadow:
     1px 1px red,
-    2px 2px orange,
-    3px 3px yellow,
-    4px 4px green,
-    5px 5px lightblue,
-    6px 6px blue,
-    7px 7px purple;
-  -webkit-transform: translateX(-7px);
-  -moz-transform: translateX(-7px); 
-  transform: translateX(-7px);
-  -webkit-transition: all 0.3s ease;;
-  -moz-transition: all 0.3s ease;;
-  -o-transition: all 0.3s ease;;
-  transition: all 0.3s ease;
+    2px 2px red,
+    3px 3px orange,
+    4px 4px orange,
+    5px 5px yellow,
+    6px 6px yellow,
+    7px 7px green,
+    8px 8px green,
+    9px 9px cyan,
+    10px 10px cyan,
+    11px 11px blue,
+    12px 12px blue,
+    13px 13px violet,
+    14px 14px violet;
+  -webkit-transform: translateX(-14px);
+  -moz-transform: translateX(-14px); 
+  transform: translateX(-14px);
+
+ 
+}
+.icons:hover{
+ border-radius: 70%;
+ background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
+ 
 }
 
 .vk {
@@ -193,20 +216,29 @@ position:right;
 
 height: 40px;
 
-   
+-webkit-transition: all 0.4s ease-out;
+-moz-transition: all 0.4s ease-out;
+-o-transition: all 0.4s ease-out;
+transition: all 0.4s ease-out;
 
 
 }
 .insta {
   position:right;
 height: 40px;
-
+-webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .tg { 
   position:right;
   height: 40px;
- 
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .menu-icons {
@@ -215,6 +247,7 @@ height: 40px;
   grid-template-columns: repeat(3, auto);
   align-items: end;
   gap: 1.5rem;
+  
 }
 
 .menu-channel-icon {

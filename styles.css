@@ -287,4 +287,5 @@ a {
  .main{
   align-items: center;
   display: flex;
+  position:absolute; left:2%; top:100%; max-width: 900px; height:75%; z-index:1
  }

@@ -170,7 +170,7 @@ body {
   right: 25px;
 Margin-right: 10px;
 }
- a:hover{
+ .turn:hover{
   box-shadow:
     1px 1px red,
     2px 2px orange,

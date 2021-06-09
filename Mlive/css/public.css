@@ -67,7 +67,25 @@ body {
     min-height: 150px;
     border: 1px solid #CCC;
 }
-
+.thumbnail {
+    position: relative;
+    display: flex;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+  }
+  
+  .thumbnail::before {
+    content: icon;
+    position: absolute;
+    background-image: url("../images/youtube-logo.png");
+    right: 5px;
+    bottom: 5px;
+    padding: .1em .3em;
+    border-radius: .3em;
+   
+  }
 .video-bottom {
     display: flex;
     align-items: flex-start;

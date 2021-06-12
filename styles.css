@@ -5,6 +5,7 @@
 
 body {
   margin: 0;
+  background-color: rgb(236, 235, 235);
 }
 
 .video-section {
@@ -151,7 +152,10 @@ body {
 .videos-black{
   background-color: #111;
 }
-
+.videos{
+  background-color: rgb(236, 235, 235);
+  border-radius: .3em;
+}
 .categories {
   padding: 1rem 2rem;
   border-top: 1px solid #999;
@@ -191,6 +195,7 @@ body {
 }
 
 .header {
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -204,6 +209,11 @@ body {
   -o-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
+.Mvideo-logo:hover{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
 
 .MLive-logo {
   position: right;
@@ -215,6 +225,12 @@ Margin-right: 10px;
   -o-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
+.MLive-logo:hover{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
  .turn:hover{
   box-shadow:
     1px 1px red,
@@ -237,10 +253,7 @@ Margin-right: 10px;
 
  
 }
-.icons:hover{
- border-radius: 70%;
- background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
-}
+
 
 .vk {
 position:right;
@@ -254,6 +267,10 @@ transition: all 0.4s ease-out;
 
 
 }
+.vk:hover{
+  border-radius: 70%;
+ background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
+}
 .insta {
   position:right;
 height: 40px;
@@ -261,6 +278,10 @@ height: 40px;
   -moz-transition: all 0.4s ease-out;
   -o-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
+}
+.insta:hover{
+  border-radius: 70%;
+  background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
 }
 
 .tg { 
@@ -270,6 +291,10 @@ height: 40px;
   -moz-transition: all 0.4s ease-out;
   -o-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
+}
+.tg:hover{
+  border-radius: 70%;
+  background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
 }
 
 .menu-icons {
@@ -306,3 +331,18 @@ a {
   display: flex;
   position:absolute; left:2%; top:100%; max-width: 900px; height:75%; z-index:1
  }
+ .tm{
+   background-color: white;
+   margin-top:10px;
+   
+   height:100%;
+ }
+ hr{
+  border:1px solid grey;
+}
+.table{
+  position: relative;
+  align-self: center;
+  top: 90%;
+}
+

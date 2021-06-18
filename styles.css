@@ -1,8 +1,3 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-  font-family: Roboto, Arial, Helvetica, sans-serif;
-}
-
 body {
   margin: 0;
   background-color: rgb(236, 235, 235);
@@ -53,6 +48,7 @@ body {
   -moz-transition: all 0.4s ease-out;
   -o-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
+  font-family: Arial, Helvetica, sans-serif, Roboto;
 }
 .new::before{
   content: attr(data-duration);
@@ -100,15 +96,8 @@ body {
   margin-bottom: .5rem;
   text-decoration: none;
   color: black;
+  font-family:  Roboto;
 }
-.video-title-black {
-  font-size: 1.1rem;
-  font-weight: bold;
-  margin-bottom: .5rem;
-  text-decoration: none;
-  color: white;
-}
-
 .video-channel-name {
   margin-bottom: .1rem;
   text-decoration: none;
@@ -122,6 +111,7 @@ body {
 .video-channel-name,
 .video-metadata {
   color: #555;
+  font-family: Arial, Helvetica, sans-serif, Roboto;
 }
 .video-metadata-black, .vivideo-channel-name-black {
   color: rgb(189, 189, 189);
@@ -137,6 +127,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 .5rem;
+  font-family: Roboto;
 }
 
 .video-section-title-close {
@@ -214,24 +205,7 @@ body {
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
-
-.MLive-logo {
-  position: right;
-  height: 70px;
-  right: 25px;
-Margin-right: 10px;
--webkit-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  -o-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
-}
-.MLive-logo:hover{
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
- .turn:hover{
+.turn:hover{
   box-shadow:
     1px 1px red,
     2px 2px red,
@@ -299,11 +273,11 @@ height: 40px;
 
 .menu-icons {
   display: grid;
- 
-  grid-template-columns: repeat(5, auto);
-  align-items: end;
+  font-family: AmericanDAD;
+  font-size: 40px;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
   gap: 2rem;
-  
 }
 .mode{
   gap: 1.5rem;
@@ -325,6 +299,7 @@ height: 40px;
 }
 a { 
   text-decoration: none; 
+  color:black !important;
  } 
  .main{
   align-items: center;
@@ -334,7 +309,7 @@ a {
  .tm{
    background-color: white;
    margin-top:10px;
-   
+   font-family: Arial, Helvetica, sans-serif, Roboto;
    height:100%;
  }
  hr{
@@ -345,4 +320,62 @@ a {
   align-self: center;
   top: 90%;
 }
+nav {
+  width: 660px;
+  margin: 0 auto 30px;
+}
+ul {
+  list-style: inside; 
+  margin: 0;
+  padding: 25px;
+  width: 100%;
+}
+.topmenu > li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+.topmenu > li:last-child {
+  margin-right: 0;
+}
 
+.fa {
+  font-family: AmericanDAD;
+  color: inherit;
+  padding-left: 10px;
+}
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  -webkit-transition: 0.1s ease-in-out;
+  -moz-transition: 0.1s ease-in-out;
+  -o-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.four .submenu {
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: #AAA ;
+}
+.four ul li:hover .submenu {
+  -webkit-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  transform: scaleY(1);
+}
+ul .a{
+  font-size: 10px;
+}
+ul a:hover{
+  background: -webkit-linear-gradient(red, yellow,  violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

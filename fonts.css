@@ -1,0 +1,9 @@
+@font-face {
+	font-family: "AmericanDAD";
+	src: url("fonts/AmericanDAD/AmericanDAD.eot");
+	src: url("fonts/AmericanDAD/AmericanDAD.eot?#iefix") format("embedded-opentype"),
+			 url("fonts/AmericanDAD/AmericanDAD.woff") format("woff"),
+			 url("fonts/AmericanDAD/AmericanDAD.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

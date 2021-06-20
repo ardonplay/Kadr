@@ -2,67 +2,76 @@
 <html>
    
     <head>
-      <link rel="shortcut icon" href="../Pictures/Kadr.ico">
-  <link rel="icon" type="image/png" sizes="196x196" href="../Pictures/Kadr-192.png">
-  <link rel="icon" sizes="16x16 32x32 64x64" href="../Pictures/Kadr.ico">
-  <link rel="icon" type="image/png" sizes="160x160" href="../Pictures/Kadr-160.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="../Pictures/Kadr-96.png">
-  <link rel="icon" type="image/png" sizes="64x64" href="../Pictures/Kadr-64.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../Pictures/Kadr-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../Pictures/Kadr-16.png">
-  <link rel="apple-touch-icon" href="../Pictures/Kadr-57.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="../Pictures/Kadr-114.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="../Pictures/Kadr-72.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="../Pictures/Kadr-144.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="../Pictures/Kadr-60.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="../Pictures/Kadr-120.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="../Pictures/Kadr-76.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="../Pictures/Kadr-152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../Pictures/Kadr-180.png">
+      <link rel="shortcut icon" href="Pictures/Kadr.ico">
+  <link rel="icon" type="image/png" sizes="196x196" href="Pictures/Kadr-192.png">
+  <link rel="icon" sizes="16x16 32x32 64x64" href="Pictures/Kadr.ico">
+  <link rel="icon" type="image/png" sizes="160x160" href="Pictures/Kadr-160.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="Pictures/Kadr-96.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="Pictures/Kadr-64.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Pictures/Kadr-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Pictures/Kadr-16.png">
+  <link rel="apple-touch-icon" href="Pictures/Kadr-57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="Pictures/Kadr-114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="Pictures/Kadr-72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="Pictures/Kadr-144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="Pictures/Kadr-60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="Pictures/Kadr-120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="Pictures/Kadr-76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="Pictures/Kadr-152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="Pictures/Kadr-180.png">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="fonts.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <title>МВидео - Нам всё равно!</title>
+        
+      <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+      <script src="https://unpkg.com/video.js/dist/video.js"></script>
+      <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
     </head>
     
     <body>
       
       <header class="header">
     
-        <a href="../index.html">
-          <img src="../Pictures/MVideo Logo.png" alt="Mvideo-logo" class="Mvideo-logo" />
+        <a href="index.html">
+          <img src="Pictures/MVideo Logo.png" alt="Mvideo-logo" class="Mvideo-logo" />
         </a>
         
         <div class="menu-icons">
           <a href="https://vk.com/h0u570n">
-            <img src="../Pictures/vk.png"  class="vk"   />
+            <img src="Pictures/vk.png"  class="vk"   />
           </a>
           <a href="https://www.instagram.com/h0u570n/">
-            <img src="../Pictures/insta.png" class="insta"  />
+            <img src="Pictures/insta.png" class="insta"  />
           </a>
     
           <a href="https://tlgg.ru/h0u570n">
-            <img src="../Pictures/tg.png" class="tg" />
+            <img src="Pictures/tg.png" class="tg" />
           </a>
          
           
         </div>
         <a href="https://zakharts.github.io/mlive/index.html">
-          <img src="../Pictures/MLive Logo.png" alt="Mlive-logo"  class="MLive-logo"/>
+          <img src="Pictures/MLive Logo.png" alt="Mlive-logo"  class="Mvideo-logo"/>
         </a>
       </header>
-      <section class="video-section">
-        <div id="Player" style="position:absolute; left:25px; top:15%; width: 75%; height:75%; z-index:1">
-            <iframe id="cdn-player" src="https://mfe06.svc.ott.zala.by/hls/CH_BELARUS4BR_HLS/variant.m3u8" autoplay="1" frameborder="0" scrolling="no" allowfullscreen="" width="100%" height="100%"></iframe>
-        </div>
+      <section class="tv-video-section">
+        <video  width="440px" id="my_video_1" class="video-js vjs-fluid vjs-default-skin" controls preload="auto"
+        data-setup='{}'>
+          <source src="https://mfe06.svc.ott.zala.by/hls/CH_BELARUS4BR_HLS/variant.m3u8" type="application/x-mpegURL">
+        </video>
+        
+      <script>
+      var player = videojs('my_video_1');
+      player.play();
+      </script>
         <div id="video-bottom-section"  style="position:absolute; left:2%; top:100%; width: 75%; height:75%; z-index:1">
           
-            <div id="video-details" style="position:absolute; left:2%; top:-10%; width: 75%; height:75%; z-index:2">
+            <div id="video-details" style="position:absolute; left:2%; top:-10%; width: 75%; height:75%; z-index:2; font-family: Arial, Helvetica, sans-serif;">
            <big>Беларусь 4 Брест</big>
-            
-            
             </div>
     
 </div>

@@ -46,34 +46,57 @@
     <a href="index.html">
       <img src="Pictures/MVideo Logo.png" alt="Mvideo-logo" class="Mvideo-logo" />
     </a>
-  <div class="menu-icons">
-    <nav class="four">
-      <ul class="topmenu">
-        <li><a href="#">Фильмы<i class="fa fa-angle-down triangle"></i></a>
-          <ul class="submenu">
-            <li><a href="">Боевики</a></li>
-            <li><a href="">Военные</a></li>
+    <nav id="menu">
+      <label for="tm" id="toggle-menu">▾</label>
+      <input type="checkbox" id="tm">
+      <ul class="main-menu clearfix">
+        <li><a href="#">Фильмы
+          <span class="drop-icon">▾</span>
+          <label title="Toggle Drop-down" class="drop-icon" for="sm1">▾</label>
+        </a>
+        <input type="checkbox" id="sm1">
+        <ul class="sub-menu">
+          <li><a href="#">Item 2.1</a></li>
+          <li><a href="#">Item 2.2
+              <span class="drop-icon">▾</span>
+              <label title="Toggle Drop-down" class="drop-icon" for="sm2">▾</label>
+            </a>
+            <input type="checkbox" id="sm2">
+            <ul class="sub-menu">
+              <li><a href="#">Item 2.2.1</a></li>
+            
+              <li><a href="#">Item 2.2.3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Item 3.4</a></li>
+        </ul>
+      </li>
+        <li><a href="#">Сериалы
+            <span class="drop-icon">▾</span>
+            <label title="Toggle Drop-down" class="drop-icon" for="sm1">▾</label>
+          </a>
+          <input type="checkbox" id="sm1">
+          <ul class="sub-menu">
+            <li><a href="#">Item 2.1</a></li>
+            <li><a href="#">Item 2.2
+                <span class="drop-icon">▾</span>
+                <label title="Toggle Drop-down" class="drop-icon" for="sm2">▾</label>
+              </a>
+              <input type="checkbox" id="sm2">
+              <ul class="sub-menu">
+                <li><a href="#">Item 2.2.1</a></li>
+              
+                <li><a href="#">Item 2.2.3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Item 3.4</a></li>
           </ul>
         </li>
-        <li><a href="#">Сериалы<i class="fa fa-angle-down triangle"></i></a>
-          <ul class="submenu">
-            <li><a href="">Item 1</a></li>
-            <li><a href="">Item 2</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Мультфильмы<i class="fa fa-angle-down triangle"></i></a>
-          <ul class="submenu">
-        
-            <li><a href="">Item 1</a></li>
-            <li><a href="">Item 2</a></li>
-          </ul> 
-        </li>
-        <li><a href="tv.html">ТВ</a>
-      
-        </li>
+        <li><a href="#">Мультфильмы</a></li>
+        <li><a href="tv.html">ТВ</a></li>
       </ul>
     </nav>
-  </div>
+
   <a href="index.html">
     <img src="Pictures/MLive Logo.png" alt="Mvideo-logo" class="Mvideo-logo" />
   </a>

@@ -23,6 +23,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <link rel="stylesheet" href="../styles.css">
+      <link rel="stylesheet" href="../fonts.css">
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
       <title>Кадр - Отсекай лишнее!</title>
   </head>
@@ -31,32 +32,68 @@
     
     <header class="header">
       <a href="../index.html">
-       <img src="../Pictures/MVideo Logo.png" alt="Mvideo-logo" class="Mvideo-logo" />
-     </a>
-     <div class="menu-icons">
-       <a href="https://vk.com/h0u570n">
-         <img src="../Pictures/vk.png"  class="vk"   />
-       </a>
-       <a href="https://www.instagram.com/h0u570n/">
-         <img src="../Pictures/insta.png" class="insta"  />
-       </a>
-       <a href="https://tlgg.ru/h0u570n">
-         <img src="../Pictures/tg.png" class="tg" />
-       </a>   
-     </div>
-     <a href="https://zakharts.github.io/mlive/index.html">
-       <img src="../Pictures/MLive Logo.png" alt="Mlive-logo"  class="MLive-logo"/>
-     </a>
-   </header>
+        <img src="../Pictures/MVideo Logo.png" alt="Mvideo-logo" class="Mvideo-logo" />
+      </a>
+      <nav id="menu">
+        <label for="tm" id="toggle-menu">▾</label>
+        <input type="checkbox" id="tm">
+        <ul class="main-menu clearfix">
+          <li><a href="#">Фильмы
+            <span class="drop-icon">▾</span>
+            <label title="Toggle Drop-down" class="drop-icon" for="sm1">▾</label>
+          </a>
+          <input type="checkbox" id="sm1">
+          <ul class="sub-menu">
+            <li><a href="#">Item 2.1</a></li>
+            <li><a href="#">Item 2.2
+                <span class="drop-icon">▾</span>
+                <label title="Toggle Drop-down" class="drop-icon" for="sm2">▾</label>
+              </a>
+              <input type="checkbox" id="sm2">
+              <ul class="sub-menu">
+                <li><a href="#">Item 2.2.1</a></li>
+              
+                <li><a href="#">Item 2.2.3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Item 3.4</a></li>
+          </ul>
+        </li>
+          <li><a href="#">Сериалы
+              <span class="drop-icon">▾</span>
+              <label title="Toggle Drop-down" class="drop-icon" for="sm1">▾</label>
+            </a>
+            <input type="checkbox" id="sm1">
+            <ul class="sub-menu">
+              <li><a href="#">Item 2.1</a></li>
+              <li><a href="#">Item 2.2
+                  <span class="drop-icon">▾</span>
+                  <label title="Toggle Drop-down" class="drop-icon" for="sm2">▾</label>
+                </a>
+                <input type="checkbox" id="sm2">
+                <ul class="sub-menu">
+                  <li><a href="#">Item 2.2.1</a></li>
+                
+                  <li><a href="#">Item 2.2.3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Item 3.4</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Мультфильмы</a></li>
+          <li><a href="tv.html">ТВ</a></li>
+        </ul>
+      </nav>
+    </header>
       <div id="Player" style="position:absolute; left:25px; top:15%; width: 75%; height:75%; z-index:1">
         <iframe id="cdn-player" src="https://etelstan.allohastream.com/?token_movie=985274ba72b9f6b12f7d2b15a64d86&amp;token=9534003470143e93f53ce89bf0c49b" frameborder="0" scrolling="no" allowfullscreen="" width="100%" height="100%"></iframe>
       </div>
       <div id="video-bottom-section"  style="position:absolute; left:2%; top:100%; width: 75%; height:75%; z-index:1">
           
-          <div id="video-details" style="position:absolute; left:2%; top:-10%; width: 75%; height:75%; z-index:2">
+          <div class="video-details" style="position:absolute; left:2%; top:-10%; width: 75%; height:75%; z-index:2">
            Локи
           
-            <div id="video-metadata">
+            <div class="video-metadata">
              
               <span>2021г.</span>
             </div>

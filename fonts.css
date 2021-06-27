@@ -7,3 +7,21 @@
 	font-style: normal;
 	font-weight: normal;
 }
+@font-face {
+	font-family: "Kadr";
+	src: url("fonts/Kadr/Kadr.eot");
+	src: url("fonts/Kadr/Kadr.eot?#iefix") format("embedded-opentype"),
+			 url("fonts/Kadr/Kadr.woff") format("woff"),
+			 url("fonts/Kadr/Kadr.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Rick_Morty";
+	src: url("fonts/Rick_Morty/Rick_Morty.eot");
+	src: url("ffonts/Rick_Morty/Rick_Morty.eot?#iefix") format("embedded-opentype"),
+			 url("fonts/Rick_Morty/Rick_Morty.woff") format("woff"),
+			 url("fonts/Rick_Morty/Rick_Morty.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

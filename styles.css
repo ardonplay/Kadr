@@ -252,9 +252,10 @@ a {
   border:1px solid grey;
 }
 .table{
+  z-index: 0;
   position: relative;
   align-self: center;
-  top: 50rem;
+  top: 100vh;
   font-family: Arial, Helvetica, sans-serif, Roboto;
 }
   .nav-top {

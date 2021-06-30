@@ -258,6 +258,7 @@ a {
     height: 80px;
     background: rgba(60, 60, 60, 0.2); 
     backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px);
   }
   .nav-top .hamburger {
     margin-left: auto;

@@ -19,9 +19,18 @@
 @font-face {
 	font-family: "Rick_Morty";
 	src: url("fonts/Rick_Morty/Rick_Morty.eot");
-	src: url("ffonts/Rick_Morty/Rick_Morty.eot?#iefix") format("embedded-opentype"),
+	src: url("fonts/Rick_Morty/Rick_Morty.eot?#iefix") format("embedded-opentype"),
 			 url("fonts/Rick_Morty/Rick_Morty.woff") format("woff"),
 			 url("fonts/Rick_Morty/Rick_Morty.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "BW";
+	src: url("fonts/BW/BW.eot");
+	src: url("fonts/BW/BW.eot?#iefix") format("embedded-opentype"),
+			 url("fonts/BW/BW.woff") format("woff"),
+			 url("fonts/BW/BW.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }

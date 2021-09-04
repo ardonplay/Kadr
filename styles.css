@@ -70,7 +70,7 @@ body {
 .new::before{
   content: attr(data-duration);
   position: absolute;
-  background-color: #ccc;
+  background-color: #0F1B1B;
   left: 1%;
   bottom: 98%;
   padding: .1em .3em;

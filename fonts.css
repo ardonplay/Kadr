@@ -34,3 +34,12 @@
 	font-style: normal;
 	font-weight: normal;
 }
+@font-face {
+	font-family: "CHI";
+	src: url("fonts/CHI/CHI.eot");
+	src: url("fonts/CHI/CHI.eot?#iefix") format("embedded-opentype"),
+			 url("fonts/CHI/CHI.woff") format("woff"),
+			 url("fonts/CHI/CHI.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

@@ -43,3 +43,12 @@
 	font-style: normal;
 	font-weight: normal;
 }
+@font-face {
+	font-family: "Venom";
+	src: url("fonts/Venom/VENOM.eot");
+	src: url("fonts/Venom/VENOM.eot?#iefix") format("embedded-opentype"),
+			 url("fonts/Venom/VENOM.woff") format("woff"),
+			 url("fonts/Venom/VENOM.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

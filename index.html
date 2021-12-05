@@ -20,7 +20,8 @@
   <link rel="apple-touch-icon" sizes="152x152" href="Pictures/Kadr-152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="Pictures/Kadr-180.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="rgba(60,60,60,0.98)">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="day">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="night">
   <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1, safari=1">
   <title>Кадр - Отсекай лишнее!</title>
   <link rel="stylesheet" href="dop.css">
@@ -33,6 +34,19 @@
 <header class="nav-top">
   <div class="menu-icons">
 	<a href="index.html"><img src="Pictures/MVideo Logo.png" class="Mvideo-logo"></a>
+  <div class="hello">
+    <div class="dropdown">
+      <a href="index.html" class="dropbtn">Фильмы</a>
+      <div class="dropdown-content">
+        <a href="#">Ссылка 1</a>
+        <a href="#">Ссылка 2</a>
+        <a href="#">Ссылка 3</a>
+      </div>
+    </div>
+  <a href="index.html">Сериалы</a>
+  <a href="index.html">Мультфильмы</a>
+  <a href="index.html">ТВ</a>
+</div>
 </div>
 	<span class="hamburger material-icons" id="ham">menu</span>
 </header>
@@ -45,7 +59,7 @@
 			<ul class="nav-items nav-expand-content">
 				<li class="nav-item">
 					<a class="nav-link" href="Movies/Film12.html">
-						захар Локи
+						Русские
 					</a>
 				</li>
 			   <li class="nav-item">
@@ -82,7 +96,6 @@
 								</li>
                
                 <li class="nav-item">
-                  <a class="nav-link" href="https://zakharts.github.io/mlive/"><img src="Pictures/MLive Logo.png" class="MLive-logo"></a>
 								</li>		
 			</ul>
 			</li>
@@ -101,7 +114,7 @@
     <section class="video-section">
       <article class="video-container">
         <a href="Movies/Film18.html" class="thumbnail turn" icon>
-          <p style="   font-size: 35px; color: rgb(172, 7, 7); font-family: Venom; font-style: italic;" href="Movies/Film18.html" class="new" data-duration="N_E_W"> </p>
+          <!--<p style="   font-size: 35px; color: rgb(172, 7, 7); font-family: Venom; font-style: italic;" href="Movies/Film18.html" class="new" data-duration="N_E_W"> </p> -->
           <img class="thumbnail-image" src="Pictures/Venom_2.jpg" />
         </a>
        
@@ -407,8 +420,11 @@
 	<hr>
 	<div class="menu-icons-2">
     <a href="meme.html"><img src="Pictures/rickroll.png" style="height: 60px;"></a>
-	<big>2021 MTeam™ all rights reserved.</big>
+    <a href="meme.html"><img src="Pictures/vk.png" style="height: 60px;"></a>
+    <a href="meme.html"><img src="Pictures/telegram.png" style="height: 60px;"></a>
+    <a href="meme.html"><img src="Pictures/instagram.png" style="height: 60px;"></a>
   </div>
+	<p class="name">2021 MTeam™ all rights reserved.</p>
 </footer>
 </body>
 </html>

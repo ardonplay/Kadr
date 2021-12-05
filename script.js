@@ -3,7 +3,7 @@ console.clear();
 const navExpand = [].slice.call(document.querySelectorAll('.nav-expand'));
 const backLink = `<li class="nav-item">
 	<a class="nav-link nav-back-link" href="javascript:;">
-		Back
+		Назад
 	</a>
 </li>`;
 

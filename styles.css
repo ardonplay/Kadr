@@ -16,7 +16,7 @@
   .night.light-scheme { background:  #eee; color: black; }
 }
 body {
-  background-color: rgb(236, 235, 235);
+  background-color: #ddd;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   
@@ -47,7 +47,6 @@ body {
   -o-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
-
 .thumbnail::before {
   content: attr(data-duration);
   position: absolute;
@@ -84,7 +83,7 @@ body {
   min-width: 250px;
   min-height: 150px;
   background-color: #AAA;
- 
+  object-fit: contain;
 }
 
 .video-bottom-section {
@@ -144,10 +143,6 @@ body {
   cursor: pointer;
 }
 
-.videos{
-  background-color: rgb(236, 235, 235);
-}
-
 .Mvideo-logo {
   box-align: left;
   height: 70px;
@@ -155,9 +150,6 @@ body {
   -moz-transition: all 0.4s ease-out;
   -o-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
-}
-.MLive-logo {
-  height: 70px;
 }
 .Mvideo-logo:hover{
   -webkit-transform: scale(1.2);
@@ -203,6 +195,7 @@ a {
   top: 100vh;
   font-family: Arial, Helvetica, sans-serif, Roboto;
 }
+
   .nav-top {
     display:  flex;
     align-items: center;
@@ -215,12 +208,90 @@ a {
     backdrop-filter: blur(12px); 
     -webkit-backdrop-filter: blur(12px);
   }
+  @media (min-width:1000px){
   .nav-top .hamburger {
-    margin-left: auto;
-    color: #fff;
-    cursor: pointer;
+   display: none;
   }
-  
+  .nav-link{
+    display: none;
+  }
+  .nav-item{
+    display: none;
+  }
+  .hello {
+    font-family: AmericanDAD;
+    font-size: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    gap: 5rem;
+  }
+
+.dropbtn {
+  font-family: AmericanDAD;
+  padding: 16px;
+  font-size: 50px;
+  border: none;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  background: rgba(60, 60, 60, 0.8); 
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transition: 1s;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: 1s;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;
+transition: 1s;}
+
+.dropdown:hover .dropdown-content {display: block;
+transition: 1s;}
+
+.dropdown:hover .dropbtn {
+  transition: 1s}
+}
+
+  @media(max-width: 999px) {
+      .turn:hover{
+       box-shadow: none !important;
+        -webkit-transform:none !important;
+        -moz-transform: none !important; 
+        transform: none !important;
+      }
+      .Mvideo-logo:hover{
+        -webkit-transform:none !important;
+        -moz-transform: none !important; 
+        transform: none !important;
+      }
+    .nav-top .hamburger {
+      margin-left: auto;
+      color: #fff;
+      cursor: pointer;
+    }
+    .hello{
+      display: none;
+    }
   .nav-drill {
     margin-top: 50px;
     transform: translateX(100%);
@@ -276,7 +347,7 @@ a {
     visibility: hidden;
   }
   .nav-expand-content .nav-item:not(:last-child) {
-    border-bottom: solid 1px #20b49c;
+    border-bottom: solid 1px #000000;
   }
   .nav-expand-content .nav-link {
     background-color: #daf9f4;
@@ -284,14 +355,10 @@ a {
   .nav-expand-content .nav-back-link {
     display: flex;
     align-items: center;
-    background-color: #20b49c !important;
+    background-color: #3d3c3c2f !important;
     color: #fff;
   }
-  .nav-expand-content .nav-back-link::before {
-    content: "chevron_left";
-    margin-right: 0.5em;
-    font-family: "Material Icons";
-  }
+
   .nav-expand-link {
     display: flex;
     justify-content: space-between;
@@ -323,6 +390,7 @@ a {
   .nav-expand .nav-expand-content .nav-expand-content .nav-expand-content .nav-link {
     background-color: #84e9d9;
   }
+}
   .menu-icons {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -330,11 +398,18 @@ a {
     gap: 5rem;
   }
   .menu-icons-2{
-    display: grid;
-    font-family: AmericanDAD;
-    font-size: 40px;
-    width: 100%;
-    grid-template-columns: 1fr, 50px;
+    display: flex;
+    gap: 4rem;
+    grid-template-columns: repeat(4, auto);
     align-items: center;
-    
+  }
+  footer{
+    background: rgba(60, 60, 60, 0.8); 
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  .name{
+    font-size: 25px;
+    font-family: Roboto;
   }

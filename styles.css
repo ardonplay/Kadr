@@ -398,12 +398,15 @@ transition: 1s;}
     gap: 5rem;
   }
   .menu-icons-2{
+    padding: 20px;
     display: flex;
     gap: 4rem;
     grid-template-columns: repeat(4, auto);
     align-items: center;
+    justify-content: center;
   }
   footer{
+    height: 200px;
     background: rgba(60, 60, 60, 0.8); 
   backdrop-filter: blur(12px); 
   -webkit-backdrop-filter: blur(12px);
